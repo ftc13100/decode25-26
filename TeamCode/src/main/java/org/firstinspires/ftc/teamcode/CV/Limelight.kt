@@ -15,9 +15,9 @@ class Teleop : LinearOpMode() {
     override fun runOpMode() {
         limelight = hardwareMap.get(Limelight3A::class.java, "limelight")
 
-        telemetry.msTransmissionInterval = 11
+        telemetry.msTransmissionInterval = 25
 
-        limelight.pipelineSwitch(0)
+        limelight.pipelineSwitch(1)
 
         // Starts polling for data
         limelight.start()

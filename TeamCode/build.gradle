@@ -28,6 +28,11 @@ android {
     androidResources {
         noCompress 'tflite'
     }
+
+    // 🔧 Add this:
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
